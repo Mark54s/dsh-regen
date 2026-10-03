@@ -1,0 +1,54 @@
+{
+  "name": "dsh-regen",
+  "version": "0.1.0",
+  "description": "ChatGPT-style regenerate for DeepSeek Harness: fork the turn and re-run the same prompt — including turns whose generation failed.",
+  "license": "MIT",
+  "author": "Mark <xumenchen@qq.com>",
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "dsh",
+    "regenerate",
+    "reroll",
+    "retry",
+    "chat"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OWNER/dsh-regen.git"
+  },
+  "homepage": "https://github.com/OWNER/dsh-regen#readme",
+  "bugs": {
+    "url": "https://github.com/OWNER/dsh-regen/issues"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation",
+        "@deepseek-ai/dsh-client-ui-workspace"
+      ]
+    },
+    "compatibility": {
+      "dshReleases": {
+        "0.2.0-rc.2": "compatible"
+      }
+    }
+  }
+}
