@@ -29,7 +29,7 @@ Existing regenerate plugins do not load on current DSH builds: one requires a cl
 dsh plugin --profile desktop add dsh-regen
 
 # from GitHub
-dsh plugin --profile desktop add github:OWNER/dsh-regen
+dsh plugin --profile desktop add github:Mark54s/dsh-regen
 
 # from a local checkout
 dsh plugin --profile desktop add /path/to/dsh-regen
@@ -71,7 +71,7 @@ Restart DSH afterwards (Desktop: menu **应用 → 重启 DeepSeek Harness**). T
 
 ```powershell
 dsh plugin --profile desktop add dsh-regen            # npm
-dsh plugin --profile desktop add github:OWNER/dsh-regen  # GitHub
+dsh plugin --profile desktop add github:Mark54s/dsh-regen  # GitHub
 ```
 
 装完重启 DSH（桌面版：应用 → 重启 DeepSeek Harness）。

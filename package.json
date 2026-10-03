@@ -27,11 +27,11 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/OWNER/dsh-regen.git"
+    "url": "git+https://github.com/Mark54s/dsh-regen.git"
   },
-  "homepage": "https://github.com/OWNER/dsh-regen#readme",
+  "homepage": "https://github.com/Mark54s/dsh-regen#readme",
   "bugs": {
-    "url": "https://github.com/OWNER/dsh-regen/issues"
+    "url": "https://github.com/Mark54s/dsh-regen/issues"
   },
   "dsh": {
     "bundle": {
