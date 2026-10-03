@@ -25,14 +25,14 @@ Existing regenerate plugins do not load on current DSH builds: one requires a cl
 ### Install
 
 ```sh
-# from npm
-dsh plugin --profile desktop add dsh-regen
-
 # from GitHub
 dsh plugin --profile desktop add github:Mark54s/dsh-regen
 
 # from a local checkout
 dsh plugin --profile desktop add /path/to/dsh-regen
+
+# from npm (as soon as the first npm release is out)
+dsh plugin --profile desktop add dsh-regen
 ```
 
 Restart DSH afterwards (Desktop: menu **应用 → 重启 DeepSeek Harness**). The plugin is a bundle: it declares `dsh.bundle.patch`, so installation registers it in `dsh.profile.bundles` automatically.
